@@ -1,2 +1,2 @@
-# daterange-picker-react
-React date range picker
+Date[Range] Picker
+===========
