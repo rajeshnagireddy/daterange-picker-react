@@ -19,7 +19,7 @@
     "start:production": "npm run build && npm run start:prod",
     "start:prod": "cross-env NODE_ENV=production node server",
     "lint": "npm run lint:js",
-    "lint:eslint": "eslint -c .eslintrc app",
+    "lint:eslint": "eslint -c .eslintrc src eslint -c .eslintrc examples",
     "lint:fix": "eslint -c .eslintrc app --fix",
     "lint:js": "npm run lint:eslint"
   },
@@ -80,6 +80,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "babel-polyfill": "6.23.0",
+    "calendar": "^0.1.0",
     "chalk": "1.1.3",
     "compression": "1.6.2",
     "cross-env": "5.0.0",
