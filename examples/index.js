@@ -1,11 +1,14 @@
-// import calendar from 'calendar';
+import 'babel-polyfill';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-document.getElementById('app').innerHTML = 'hello';
+import App from 'containers/App';
+
+const MOUNT_NODE = document.getElementById('app');
+
+ReactDOM.render(
+  <App />,
+  MOUNT_NODE
+);
+
 document.getElementById('loader').remove();
-
-
-// const cal = new calendar.Calendar();
-// const m = cal.monthDays(2018, 4);
-// for (let i=0; i<m.length; i++) {
-//   console.log(m[i]);
-// }

@@ -20,7 +20,7 @@
     "start:prod": "cross-env NODE_ENV=production node server",
     "lint": "npm run lint:js",
     "lint:eslint": "eslint -c .eslintrc src eslint -c .eslintrc examples",
-    "lint:fix": "eslint -c .eslintrc app --fix",
+    "lint:fix": "eslint -c .eslintrc examples --fix eslint -c .eslintrc src --fix",
     "lint:js": "npm run lint:eslint"
   },
   "lint-staged": {

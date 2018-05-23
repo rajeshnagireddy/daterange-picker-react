@@ -14,7 +14,7 @@ process.noDeprecation = true;
 module.exports = (options) => ({
   entry: options.entry,
   output: Object.assign({ // Compile into js/build.js
-    path: path.resolve(process.cwd(), 'dist'),
+    path: path.resolve(process.cwd(), 'build'),
     publicPath: '/',
   }, options.output), // Merge with env dependent settings
   module: {
@@ -94,7 +94,7 @@ module.exports = (options) => ({
     new webpack.NamedModulesPlugin(),
   ]),
   resolve: {
-    modules: ['app', 'node_modules'],
+    modules: ['examples', 'node_modules'],
     extensions: [
       '.js',
       '.jsx',
