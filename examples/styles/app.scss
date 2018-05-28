@@ -1,0 +1,30 @@
+@import '/variables';
+
+.purple {
+	background-color: purple;
+	color: white;
+}
+
+html, body, #app, main {
+	height: 100%;
+}
+
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+  	line-height: 1.42857143;
+	margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.hide {
+	display: none;
+}

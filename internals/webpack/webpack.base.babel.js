@@ -94,7 +94,7 @@ module.exports = (options) => ({
     new webpack.NamedModulesPlugin(),
   ]),
   resolve: {
-    modules: ['examples', 'node_modules'],
+    modules: ['examples', 'src', 'node_modules'],
     extensions: [
       '.js',
       '.jsx',

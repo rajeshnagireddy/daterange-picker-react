@@ -2,9 +2,9 @@ import React from 'react';
 
 import './gitHubRibbon.scss';
 
-const GitHubRibbon = () => (
-  <div className="ribbon right green">
-    <a href="https://github.com/username/repo">Fork me on GitHub</a>
+const GitHubRibbon = (props) => (
+  <div className={`ribbon right ${props.className}`}>
+    <a href="https://rajeshnagireddy.github.io/daterange-picker-react">Fork me on GitHub</a>
   </div>
 );
 
